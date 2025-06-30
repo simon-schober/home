@@ -114,5 +114,13 @@
       name = "simon"; # git user name eg "John Doe"
       email = "simon.schober@tutanota.com"; # git user email eg "john.doe@example.com"
     };
+    hyprland = {
+      enable = true; # enable hyprland module
+      extraConfig = """
+        input {
+          kb_layout = de
+        }
+      """; # extra hyprland config text
+    };
   };
 }
