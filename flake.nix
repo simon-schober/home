@@ -12,7 +12,8 @@
       # Dev: github:richen604/hydenix/dev
       # Commit: github:richen604/hydenix/<commit-hash>
       # Version: github:richen604/hydenix/v1.0.0
-      url = "path:/home/simon/.dotfiles/hydenix";
+      # Local: url = "path:/home/simon/.dotfiles/hydenix";
+      url = "github:richen604/hydenix";
     };
 
     # Nix-index-database - for comma and command-not-found
