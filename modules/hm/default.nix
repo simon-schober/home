@@ -116,11 +116,11 @@
     };
     hyprland = {
       enable = true; # enable hyprland module
-      extraConfig = """
+      extraConfig = "
         input {
           kb_layout = de
         }
-      """; # extra hyprland config text
+      "; # extra hyprland config text
     };
   };
 }
