@@ -107,6 +107,12 @@ in
       };
       system.enable = true; # enable system module
     */
+    boot = {
+      enable = true; # enable boot module
+      useSystemdBoot = false; # disable for GRUB
+      grubTheme = "Retroboot"; # or "Pochita"
+      kernelPackages = pkgs.linuxPackages_zen; # default zen kernel
+    };
   };
 
   #! EDIT THESE VALUES (must match users defined above)

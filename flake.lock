@@ -47,14 +47,17 @@
         "nixos-hardware": "nixos-hardware"
       },
       "locked": {
-        "lastModified": 1751232339,
-        "narHash": "sha256-gX+/bp666jaVp5Ir+i0A/9QHf/0uAE33XO0cc5H9BVg=",
-        "path": "/home/simon/.dotfiles/hydenix",
-        "type": "path"
+        "lastModified": 1750986827,
+        "narHash": "sha256-HVHH4TAIyA+g9DAM07hWgdYxoZFVcFxiM4m2vQ736Ic=",
+        "owner": "richen604",
+        "repo": "hydenix",
+        "rev": "1f78f7e5d8dd36214973492f82707f01ba874842",
+        "type": "github"
       },
       "original": {
-        "path": "/home/simon/.dotfiles/hydenix",
-        "type": "path"
+        "owner": "richen604",
+        "repo": "hydenix",
+        "type": "github"
       }
     },
     "hydenix-nixpkgs": {
@@ -70,6 +73,24 @@
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "c539ae8d21e49776966d714f82fba33b1fca78bc",
+        "type": "github"
+      }
+    },
+    "musnix": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1741303672,
+        "narHash": "sha256-eRKbKccBu3PK/oJpmUuLo+0v45d0SEjosE8tVsHbpeA=",
+        "owner": "musnix",
+        "repo": "musnix",
+        "rev": "d56a15f30329f304151e4e05fa82264d127da934",
+        "type": "github"
+      },
+      "original": {
+        "owner": "musnix",
+        "repo": "musnix",
         "type": "github"
       }
     },
@@ -132,6 +153,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1740695751,
+        "narHash": "sha256-D+R+kFxy1KsheiIzkkx/6L63wEHBYX21OIwlFV8JvDs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "6313551cd05425cd5b3e63fe47dbc324eabb15e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1751011381,
         "narHash": "sha256-krGXKxvkBhnrSC/kGBmg5MyupUUT5R6IBCLEzx9jhMM=",
         "owner": "nixos",
@@ -149,8 +186,9 @@
     "root": {
       "inputs": {
         "hydenix": "hydenix",
+        "musnix": "musnix",
         "nix-index-database": "nix-index-database_2",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },

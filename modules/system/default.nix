@@ -1,12 +1,15 @@
-{ ... }:
+{ pkgs, lib, ... }:
 
 {
   imports = [
-    # ./example.nix - add your modules here
+    ./mullvad.nix
+    ./nextcloud.nix
+    ./music.nix
   ];
 
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
     # pkgs.vscode - hydenix's vscode version
     # pkgs.userPkgs.vscode - your personal nixpkgs version
+    unzip
   ];
 }

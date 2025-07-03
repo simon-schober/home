@@ -1,14 +1,20 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
-    # ./example.nix - add your modules here
+    ./nvim/nvim.nix
+    ./lang/cc.nix
+    ./lang/javascript.nix
   ];
 
   # home-manager options go here
-  home.packages = [
+  home.packages = with pkgs; [
     # pkgs.vscode - hydenix's vscode version
     # pkgs.userPkgs.vscode - your personal nixpkgs version
+    logseq
+    strawberry
+    qalculate-gtk
+    keepassxc
   ];
 
   # hydenix home-manager options go here
@@ -104,10 +110,8 @@
     */
     editors = {
         enable = true; # enable editors module
-        vscode = {
-          enable = true; # enable vscode module
-          wallbash = true; # enable wallbash extension for vscode
-        };
+        vscode.enable = false;
+        neovim = true;
     };
     git = {
       enable = true; # enable git module
@@ -116,11 +120,25 @@
     };
     hyprland = {
       enable = true; # enable hyprland module
-      extraConfig = "
-        input {
-          kb_layout = de
-        }
-      "; # extra hyprland config text
+      extraConfig = "input {
+  kb_layout = de
+  follow_mouse = 1
+  mouse_refocus = false
+}
+windowrulev2 = stayfocused, title:^()$, class:^(steam|wineapp|steam_proton)$
+windowrulev2 = minsize 1 1, title:^()$, class:^(steam|wineapp|steam_proton)$"; # extra hyprland config text
+    };
+    terminals = {
+      enable = true; # enable terminals module
+      kitty = {
+        enable = true; # enable kitty terminal
+        configText = "confirm_os_window_close 0"; # kitty config text
+      };
+    };
+    social.enable = false;
+    spotify.enable = false;
+    waybar = {
+      enable = true; # enable waybar module
     };
   };
 }
