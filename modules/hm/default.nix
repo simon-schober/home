@@ -5,6 +5,8 @@
     ./nvim/nvim.nix
     ./lang/cc.nix
     ./lang/javascript.nix
+    ./lang/java.nix
+    ./lang/rust.nix
   ];
 
   # home-manager options go here

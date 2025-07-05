@@ -12,7 +12,7 @@
     marksman
     python311Packages.python-lsp-server
     typescript-language-server
-    java-language-server
+    jdt-language-server
     dockerfile-language-server-nodejs
     docker-compose-language-service
     kotlin-language-server
@@ -20,6 +20,8 @@
     yaml-language-server
     sqls
     nmap
+    rust-analyzer
+    ripgrep
   ];
   programs.neovim = {
     viAlias = true;

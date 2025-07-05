@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     ardour
+    cardinal
     vital
     lsp-plugins
     surge-XT
