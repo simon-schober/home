@@ -5,6 +5,7 @@
     ./mullvad.nix
     ./nextcloud.nix
     ./music.nix
+    ./plymouth.nix
   ];
 
   environment.systemPackages = with pkgs; [

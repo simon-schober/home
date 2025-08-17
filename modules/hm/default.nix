@@ -128,7 +128,12 @@
   mouse_refocus = false
 }
 windowrulev2 = stayfocused, title:^()$, class:^(steam|wineapp|steam_proton)$
-windowrulev2 = minsize 1 1, title:^()$, class:^(steam|wineapp|steam_proton)$"; # extra hyprland config text
+windowrulev2 = minsize 1 1, title:^()$, class:^(steam|wineapp|steam_proton)$
+bind = $mainMod, N, exec, neovide
+unbind = $mainMod, T
+unbind = $mainMod, A
+bind = $mainMod, ENTER, exec, $TERMINAL
+bind = $mainMod, SPACE, exec, $rofi-launch"; # extra hyprland config text
     };
     terminals = {
       enable = true; # enable terminals module
