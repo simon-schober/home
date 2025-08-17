@@ -132,7 +132,7 @@ windowrulev2 = minsize 1 1, title:^()$, class:^(steam|wineapp|steam_proton)$
 bind = $mainMod, N, exec, neovide
 unbind = $mainMod, T
 unbind = $mainMod, A
-bind = $mainMod, ENTER, exec, $TERMINAL
+bind = $mainMod, RETURN, exec, $TERMINAL
 bind = $mainMod, SPACE, exec, $rofi-launch"; # extra hyprland config text
     };
     terminals = {
