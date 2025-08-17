@@ -5,6 +5,7 @@ local servers = { "html", "cssls", "marksman", "clangd", "pylsp", "ts_ls", "jdtl
 vim.lsp.enable(servers)
 vim.lsp.config('jdtls', { cmd = { 'jdtls' } })
 vim.lsp.config('rust_analyzer', { cmd = { 'rust-analyzer' } })
+vim.lsp.config('html', { cmd = { "vscode-html-language-server", "--stdio" } })
 
 -- configuring single server, example: typescript
 -- lspconfig.ts_ls.setup {
