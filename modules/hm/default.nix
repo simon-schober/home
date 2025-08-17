@@ -19,6 +19,8 @@
     keepassxc
     anki
     yt-dlp
+    ffmpeg
+    mpv
   ];
 
   # hydenix home-manager options go here
