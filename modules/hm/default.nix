@@ -18,6 +18,7 @@
     qalculate-gtk
     keepassxc
     anki
+    yt-dlp
   ];
 
   # hydenix home-manager options go here
