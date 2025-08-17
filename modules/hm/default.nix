@@ -129,11 +129,14 @@
 }
 windowrulev2 = stayfocused, title:^()$, class:^(steam|wineapp|steam_proton)$
 windowrulev2 = minsize 1 1, title:^()$, class:^(steam|wineapp|steam_proton)$
-bind = $mainMod, N, exec, neovide
+bind = $mainMod, C, exec, neovide
 unbind = $mainMod, T
 unbind = $mainMod, A
 bind = $mainMod, RETURN, exec, $TERMINAL
-bind = $mainMod, SPACE, exec, $rofi-launch"; # extra hyprland config text
+bind = $mainMod, SPACE, exec, $rofi-launch
+bind = $mainMod, M, exec, strawberry
+bind = $mainMod, N, exec, logseq
+bind = $mainMod, F, exec, anki"; # extra hyprland config text
     };
     terminals = {
       enable = true; # enable terminals module
