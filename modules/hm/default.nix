@@ -17,6 +17,7 @@
     strawberry
     qalculate-gtk
     keepassxc
+    anki
   ];
 
   # hydenix home-manager options go here
