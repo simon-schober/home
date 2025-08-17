@@ -139,8 +139,13 @@ windowrulev2 = minsize 1 1, title:^()$, class:^(steam|wineapp|steam_proton)$"; #
     };
     social.enable = false;
     spotify.enable = false;
-    waybar = {
-      enable = true; # enable waybar module
+    theme = {
+      enable = true; # enable theme module
+      active = "Catppuccin Mocha"; # active theme name
+      themes = [
+        "Catppuccin Mocha"
+        "Catppuccin Latte"
+      ]; # default enabled themes, full list in https://github.com/richen604/hydenix/tree/main/hydenix/sources/themes
     };
   };
 }
