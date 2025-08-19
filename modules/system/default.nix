@@ -6,6 +6,7 @@
     ./nextcloud.nix
     ./music.nix
     ./plymouth.nix
+    ./virtualization.nix
   ];
 
   environment.systemPackages = with pkgs; [

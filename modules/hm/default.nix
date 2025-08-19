@@ -21,6 +21,7 @@
     yt-dlp
     ffmpeg
     mpv
+    tutanota-desktop
   ];
 
   # hydenix home-manager options go here
