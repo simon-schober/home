@@ -7,6 +7,7 @@
     ./music.nix
     ./plymouth.nix
     ./virtualization.nix
+    ./polkit.nix
   ];
 
   environment.systemPackages = with pkgs; [

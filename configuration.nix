@@ -123,7 +123,6 @@ in
       "wheel" # For sudo access
       "networkmanager" # For network management
       "video" # For display/graphics access
-      "libvirtd"
       # Add other groups as needed
     ];
     shell = pkgs.zsh; # Change if you prefer a different shell
