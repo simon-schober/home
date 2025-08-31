@@ -22,6 +22,9 @@
     ffmpeg
     mpv
     tutanota-desktop
+    gparted
+    bottles
+    prismlauncher
   ];
 
   # hydenix home-manager options go here

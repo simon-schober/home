@@ -107,6 +107,9 @@ in
       };
       system.enable = true; # enable system module
     */
+
+    gaming.enable = true; # enable gaming module
+
     boot = {
       enable = true; # enable boot module
       useSystemdBoot = false; # disable for GRUB
