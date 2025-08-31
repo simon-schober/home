@@ -24,7 +24,7 @@
     tutanota-desktop
     gparted
     bottles
-    prismlauncher
+    prism-launcher
   ];
 
   # hydenix home-manager options go here
