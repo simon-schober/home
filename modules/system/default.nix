@@ -8,6 +8,9 @@
     ./plymouth.nix
     ./virtualization.nix
     ./polkit.nix
+    ./printing.nix
+    ./flatpak.nix
+    ./logind.nix
   ];
 
   environment.systemPackages = with pkgs; [

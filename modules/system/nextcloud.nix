@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -18,4 +18,5 @@
   security.pam.services.gdm.enableGnomeKeyring = true;
   # or for greetd, lightdm, etc.:
   # security.pam.services.greetd.enableGnomeKeyring = true;
+  home-manager.users.simon.hydenix.hm.hyprland.extraConfig = lib.mkAfter ''exec-once = nextcloud'';
 }

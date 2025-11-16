@@ -11,6 +11,8 @@
     clang-tools
     marksman
     python311Packages.python-lsp-server
+    python311Packages.python-lsp-ruff
+    python311Packages.pip
     typescript-language-server
     jdt-language-server
     dockerfile-language-server-nodejs
@@ -22,6 +24,7 @@
     nmap
     rust-analyzer
     ripgrep
+    black
   ];
   programs.neovim = {
     viAlias = true;

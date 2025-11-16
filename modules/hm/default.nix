@@ -14,8 +14,17 @@
     # pkgs.vscode - hydenix's vscode version
     # pkgs.userPkgs.vscode - your personal nixpkgs version
     logseq
+    localsend
+    zotero
+    thunderbird
+    cantor
+    texliveFull
+    libreoffice-fresh
+    mate.atril
     strawberry
+    nuclear
     qalculate-gtk
+    libqalculate
     keepassxc
     anki
     yt-dlp
@@ -23,8 +32,11 @@
     mpv
     tutanota-desktop
     gparted
+    baobab
+    koreader
     bottles
-    prism-launcher
+    prismlauncher
+    ladybird
   ];
 
   # hydenix home-manager options go here
@@ -132,8 +144,8 @@
       enable = true; # enable hyprland module
       extraConfig = "input {
   kb_layout = de
-  follow_mouse = 1
-  mouse_refocus = false
+  sensitivity = 0.5
+  accel_profile = flat
 }
 windowrulev2 = stayfocused, title:^()$, class:^(steam|wineapp|steam_proton)$
 windowrulev2 = minsize 1 1, title:^()$, class:^(steam|wineapp|steam_proton)$
@@ -144,8 +156,10 @@ bind = $mainMod, RETURN, exec, $TERMINAL
 bind = $mainMod, SPACE, exec, $rofi-launch
 bind = $mainMod, M, exec, strawberry
 bind = $mainMod, N, exec, logseq
-bind = $mainMod, F, exec, anki"; # extra hyprland config text
-    };
+bind = $mainMod, F, exec, anki
+bindl=,switch:on:Lid Switch,exec,lockscreen.sh
+monitor = , preferred, auto, 1"; # extra hyprland config textmonitor = DP-1, 1920x1080@144, 0x0, 1
+};
     terminals = {
       enable = true; # enable terminals module
       kitty = {

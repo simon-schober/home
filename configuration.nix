@@ -83,7 +83,7 @@ in
     #! EDIT THESE VALUES
     hostname = "home"; # Change to your preferred hostname
     timezone = "Europe/Vienna"; # Change to your timezone
-    locale = "de_AT.UTF-8"; # Change to your preferred locale
+    locale = "en_US.UTF-8"; # Change to your preferred locale
 
     /*
       Optionally edit the below values, or leave to use hydenix defaults

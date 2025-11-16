@@ -2,6 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    rustc cargo rustfmt clippy
+    rustc cargo rustfmt clippy diesel-cli sqlite
   ];
 }
